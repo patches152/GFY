@@ -1,0 +1,54 @@
+newrelic-logging:
+  resources:
+    limits:
+      cpu: 200m
+      memory: 192Mi
+    requests:
+      cpu: 100m
+      memory: 64Mi
+
+newrelic-infrastructure:
+  enableProcessMetrics: "false"
+  resources:
+    limits:
+      cpu: 200m
+      memory: 300M
+    requests:
+      cpu: 100m
+      memory: 150M
+
+nri-metadata-injection:
+  resources:
+    limits:
+      cpu: 200m
+      memory: 80M
+    requests:
+      cpu: 100m
+      memory: 30M
+
+nri-kube-events:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+nri-prometheus:
+  resources:
+    limits:
+      cpu: 200m
+      memory: 512Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+
+kube-state-metrics:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 64Mi
+    requests:
+      cpu: 10m
+      memory: 32Mi
